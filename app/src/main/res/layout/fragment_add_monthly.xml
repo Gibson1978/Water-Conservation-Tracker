@@ -1,14 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".AddFragmentPackage.AddDailyFragment">
+    tools:context=".AddFragmentPackage.AddDailyFragment"
+    android:descendantFocusability="blocksDescendants">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Monthly Bills: "
+                    android:layout_marginRight="22dp"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_txt_montly_bills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Enter Total Bills to Pay (RM)"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="16sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="19dp"
+                    android:gravity="left"
+                    android:text="Time Recorded:"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_DT_monthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select Date "
+                    android:inputType="none"
+                    android:padding="8dp"
+                    android:textSize="16sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:id="@+id/tv_receipt_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Receipt:"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="File Name"
+                    android:paddingTop="8dp">
+
+                </EditText>
+                <!--Find out how to change background color of button-->
+                <Button
+                    android:id="@+id/btn_Upload_receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload File or Take a Picture of the Receipt"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/blue4">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional Information"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_additional_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:maxLines="10"
+                    android:textSize="16sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_upload_monthly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:text="Upload"
+            android:backgroundTint="@color/blue4">
+
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginBottom="16dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,114 +179,195 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="32dp">
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="19dp"
+                    android:gravity="left"
+                    android:text="Choose Date"
+                    android:textSize="14sp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="Monthly Bills: "
-                        android:layout_marginRight="22dp"
-                        android:textSize="14sp">
+                </TextView>
 
-                    </TextView>
+                <EditText
+                    android:id="@+id/et_DT_monthly_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select Date "
+                    android:inputType="none"
+                    android:textSize="16sp">
 
-                    <EditText
-                        android:id="@+id/et_txt_montly_bills"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/edit_text_background"
-                        android:hint="Enter Total Bills to Pay (RM)"
-                        android:inputType="numberDecimal"
-                        android:padding="8dp"
-                        android:textSize="16sp">
+                </EditText>
 
-                    </EditText>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_view_monthly_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="64dp"
+                android:layout_marginEnd="64dp"
+                android:text="View Monthly Data"
+                android:backgroundTint="@color/blue4">
 
-                </LinearLayout>
+            </Button>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_monthly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginHorizontal="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="#FFFFFF"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginBottom="32dp">
+                    android:padding="16dp">
 
-                    <TextView
-                        android:id="@+id/tv_receipt_upload"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Upload Receipt:"
-                        android:textSize="14sp">
-
-                    </TextView>
-
-
-                    <!--Find out how to change background color of button-->
-                    <Button
-                        android:id="@+id/btn_Upload_receipt"
+                    <!-- Usage -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Upload File or Take a Picture of the Receipt"
-                        android:padding="8dp"
-                        android:layout_marginTop="16dp"
-                        android:backgroundTint="@color/blue4">
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
 
-                    </Button>
+                        <!-- the subtitle/category -->
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Date: " />
+
+                        <!-- the data -->
+                        <TextView
+                            android:id="@+id/tv_date_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yyyy-MM-DD" />
+                    </LinearLayout>
+
+                    <!-- Payment -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_Water_Bills"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total Payment (MYR):" />
+
+                        <TextView
+                            android:id="@+id/tv_water_bills_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RM" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_add_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Additional Information:" />
+
+                        <TextView
+                            android:id="@+id/tv_add_info_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Placeholdertext" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="19dp"
+                    android:gravity="left"
+                    android:text="Selected Date to Delete"
+                    android:textSize="14sp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Additional Information"
-                        android:textSize="14sp">
+                </TextView>
 
-                    </TextView>
+                <EditText
+                    android:id="@+id/et_delete_monthy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select Date and Time"
+                    android:inputType="none"
+                    android:padding="8dp"
+                    android:textSize="16sp">
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/edit_text_background"
-                        android:inputType="textMultiLine"
-                        android:minLines="1"
-                        android:maxLines="10"
-                        android:textSize="16sp">
-
-                    </EditText>
-
-                </LinearLayout>
-
-
+                </EditText>
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_upload_daily"
+                android:id="@+id/btn_delete_monthly"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginStart="64dp"
                 android:layout_marginEnd="64dp"
                 android:layout_marginBottom="24dp"
-                android:text="Upload"
+                android:text="Delete"
                 android:backgroundTint="@color/blue4">
 
             </Button>
+
         </LinearLayout>
 
-    </ScrollView>
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

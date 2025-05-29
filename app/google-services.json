@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "658168437940",
+    "project_id": "waterconservationapp-eea35",
+    "storage_bucket": "waterconservationapp-eea35.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658168437940:android:3efb09facdf4b4ea7d8be1",
+        "android_client_info": {
+          "package_name": "com.example.waterconservationappblank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658168437940-lkk7lv07akt1qv62f94lp0bfmo33qmj6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waterconservationappblank",
+            "certificate_hash": "ff17392b833631dda013e27242ff1f750b9ee79f"
+          }
+        },
+        {
+          "client_id": "658168437940-kmj6b8i3mtm9q5fhlegi64917d40qv6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_aHTNtB82M0owJ-fviWYm9UIm39hcsIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658168437940-2ucg94jcbvp5hepv9p07b57260d2kfeq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,17 +12,8 @@ import java.util.Locale;
 
 public class LogFragment extends Fragment {
 
-    // Keys used for passing data when fragment is instantiated
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // Variables to hold argument values (currently unused in logic)
-    private String mParam1;
-    private String mParam2;
-
     // UI Components
     private CalendarView calendarView;
-
     private TextView textUsage, textTotalPayment, textDatePaid;
     private TextView textAverageDay, textAverageHour, textAverageMinute, textAverageWeek;
 
@@ -33,26 +24,13 @@ public class LogFragment extends Fragment {
         // Required empty public constructor
     }
 
-    // Factory method to create a new instance of this fragment using arguments
-    public static LogFragment newInstance(String param1, String param2) {
-        LogFragment fragment = new LogFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
+    // retrieve arguments passed to this fragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Retrieve any arguments passed when creating the fragment
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
+    // inflate the layout and initialize UI elements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

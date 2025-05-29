@@ -56,8 +56,6 @@
                 android:padding="4dp"
                 android:weightSum="7">
 
-                <!-- For day (Mon to Sun) -->
-                <!-- MONDAY -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -65,14 +63,6 @@
                     android:gravity="bottom|center_horizontal"
                     android:orientation="vertical"
                     android:padding="4dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Mon"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
 
                     <FrameLayout
                         android:id="@+id/monbar"
@@ -83,17 +73,9 @@
                         android:backgroundTintMode="src_in"
                         android:clipToOutline="true"
                         android:elevation="4dp"
-                        android:foregroundGravity="bottom">
+                        android:foregroundGravity="bottom"
+                        android:layout_marginRight="1dp">
 
-                        <!-- Usage (white area) -->
-                        <View
-                            android:id="@+id/mon_usage"
-                            android:layout_width="match_parent"
-                            android:layout_height="64dp"
-                            android:layout_gravity="bottom"
-                            android:layout_margin="2dp"
-                            android:background="@color/blue3"
-                            android:backgroundTintMode="src_in" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -106,14 +88,6 @@
                     android:orientation="vertical"
                     android:padding="4dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Tue"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
                     <FrameLayout
                         android:id="@+id/tuebar"
                         android:layout_width="24dp"
@@ -121,15 +95,9 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/white"
                         android:clipToOutline="true"
-                        android:elevation="4dp">
+                        android:elevation="4dp"
+                        android:layout_marginRight="1dp">
 
-                        <View
-                            android:id="@+id/tue_usage"
-                            android:layout_width="match_parent"
-                            android:layout_height="35dp"
-                            android:layout_gravity="bottom"
-                            android:layout_margin="2dp"
-                            android:background="@color/blue3" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -142,14 +110,6 @@
                     android:orientation="vertical"
                     android:padding="4dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Wed"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
                     <FrameLayout
                         android:id="@+id/wedbar"
                         android:layout_width="24dp"
@@ -159,13 +119,6 @@
                         android:clipToOutline="true"
                         android:elevation="4dp">
 
-                        <View
-                            android:id="@+id/wed_usage"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_gravity="bottom"
-                            android:layout_margin="2dp"
-                            android:background="@color/blue3" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -178,14 +131,6 @@
                     android:orientation="vertical"
                     android:padding="4dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Thu"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
                     <FrameLayout
                         android:id="@+id/thubar"
                         android:layout_width="24dp"
@@ -193,15 +138,9 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/white"
                         android:clipToOutline="true"
-                        android:elevation="4dp">
+                        android:elevation="4dp"
+                        android:layout_marginLeft="2.02dp">
 
-                        <View
-                            android:id="@+id/thu_usage"
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:layout_gravity="bottom"
-                            android:layout_margin="2dp"
-                            android:background="@color/blue3" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -214,14 +153,6 @@
                     android:orientation="vertical"
                     android:padding="4dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Fri"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
                     <FrameLayout
                         android:id="@+id/fribar"
                         android:layout_width="24dp"
@@ -229,15 +160,9 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/white"
                         android:clipToOutline="true"
-                        android:elevation="4dp">
+                        android:elevation="4dp"
+                        android:layout_marginLeft="1.75dp">
 
-                        <View
-                            android:id="@+id/fri_usage"
-                            android:layout_width="match_parent"
-                            android:layout_height="132dp"
-                            android:layout_gravity="bottom"
-                            android:layout_margin="2dp"
-                            android:background="@color/blue3" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -250,14 +175,6 @@
                     android:orientation="vertical"
                     android:padding="4dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Sat"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
                     <FrameLayout
                         android:id="@+id/satbar"
                         android:layout_width="24dp"
@@ -265,15 +182,9 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/white"
                         android:clipToOutline="true"
-                        android:elevation="4dp">
+                        android:elevation="4dp"
+                        android:layout_marginLeft="3.1dp">
 
-                        <View
-                            android:id="@+id/sat_usage"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_gravity="bottom"
-                            android:layout_margin="2dp"
-                            android:background="@color/blue3" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -286,14 +197,6 @@
                     android:orientation="vertical"
                     android:padding="4dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Sun"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
                     <FrameLayout
                         android:id="@+id/sunbar"
                         android:layout_width="24dp"
@@ -301,18 +204,21 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/white"
                         android:clipToOutline="true"
-                        android:elevation="4dp">
+                        android:elevation="4dp"
+                        android:layout_marginLeft="2.8dp">
 
-                        <View
-                            android:id="@+id/sun_usage"
-                            android:layout_width="match_parent"
-                            android:layout_height="25dp"
-                            android:layout_gravity="bottom"
-                            android:layout_margin="2dp"
-                            android:background="@color/blue3" />
                     </FrameLayout>
                 </LinearLayout>
             </LinearLayout>
+
+            <!-- For day (Mon to Sun) -->
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="6dp"/>
+
         </androidx.cardview.widget.CardView>
 
         <!-- Bottom row: This Week + Estimated Price -->
@@ -359,6 +265,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tv_percentage_diff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="less"

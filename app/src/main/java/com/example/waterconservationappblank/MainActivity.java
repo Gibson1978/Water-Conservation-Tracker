@@ -94,8 +94,14 @@ public class MainActivity extends AppCompatActivity {
      * It loads the dashboard fragment and shows the top bar and bottom navigation.
      */
     public void loadDashboard() {
+
+        // make the top bar date TextView visible
         TopBarDate.setVisibility(View.VISIBLE);
+
+        // mak the bottom navigation bar visible
         bottomNavigationView.setVisibility(View.VISIBLE);
+
+        // replace the container with the dashboard fragment
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, dashboardFragment)
                 .commit();
